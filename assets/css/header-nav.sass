@@ -1,0 +1,84 @@
+.header
+	position: absolute
+	display: flex
+	align-items: center
+	justify-content: space-between
+	height: 60px
+	top: 0
+	left: 0
+	right: 0
+	background: transparent
+	z-index: 2
+	h1
+		margin: 0 0 0 .5em
+	.button-container
+		position: relative
+		width: 30px
+		height: 1.688em
+		margin-right: 1em
+		cursor: pointer
+		z-index: 10
+		&.active
+			.top
+				transform: translateY(.688em) translateX(0) rotate(45deg)
+			.middle
+				opacity: 0
+			.bottom
+				transform: translateY(-.688em) translateX(0) rotate(-45deg)
+	.top, .middle, .bottom
+		background: #212f2d
+	span
+		position: absolute
+		width: 100%
+		height: 2px
+		top: 0
+		left: 0
+		cursor: pointer
+		transition: all .35s ease
+		&:nth-of-type(2)
+			top: .688em
+		&:nth-of-type(3)
+			top: 1.375em
+
+// Navigation
+.overlay
+	position: absolute
+	display: flex
+	justify-content: center
+	width: 100%
+	height: 0
+	top: 0
+	left: 0
+	right: 0
+	padding-top: 60px
+	background: #cce7e5
+	opacity: 0
+	z-index: 1
+	visibility: hidden
+	transition: opacity 0.35s, visibility 0.35s, height 0.35s
+
+	nav
+		text-align: center
+
+	ul
+		display: flex
+		flex-direction: column
+		justify-content: space-around
+		height: 100%
+		margin-top: 0
+		padding: 0
+		list-style: none
+
+.open
+	height: 400px
+	opacity: 1
+	visibility: visible
+	@media(min-width: 1024px)
+		height: 500px
+
+header #contact-btn
+	background: #c0c0c0
+
+header #toggle.active
+	#contact-btn
+		background: #212f2d

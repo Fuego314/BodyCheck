@@ -1,0 +1,47 @@
+// TODO: animate arrow buttons
+
+.hero-mass
+	background-image: url(../../imgs/massage-sm.jpg)
+	@media(min-width: 640px)
+		background-image: url(../../imgs/massage-md.jpg)
+	@media(min-width: 1024px)
+		background-image: url(../../imgs/massage-lg.jpg)
+
+.main-content-massages
+	padding: 3em 1em 1em
+	@media(min-width: 640px)
+		padding: 2em 1em 0
+	@media(min-width: 1024px)
+		padding: 5em 9em 0
+	@media(min-width: 1240px)
+		padding: 5em 14em 0
+
+.mass-head
+	margin: 0 0 1.5rem
+	@media(min-width: 1024px)
+		margin: 0 0 .5rem
+
+.massage-flex
+	position: relative
+	display: block
+	@media(min-width: 640px)
+		display: flex
+		flex-direction: row
+	@media(min-width: 1024px)
+		display: block
+		margin-top: 2em
+	.massage-in-flex
+		@media(min-width: 640px)
+			width: 50%
+			&:nth-child(2)
+				padding-left: 1em
+		@media(min-width: 1024px)
+			width: 100%
+			&:nth-child(2)
+				padding-left: 0
+
+.price-link
+	display: inline-block
+	margin: 1.1em 0
+	@media(min-width: 1024px)
+		margin-top: 2.2rem

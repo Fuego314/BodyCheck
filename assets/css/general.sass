@@ -1,0 +1,58 @@
+::root
+  font-size: 16px
+
+*, *::after, *::before
+  box-sizing: border-box
+
+body
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+.header h1 a,
+.hero,
+h2,
+.overlay a,
+.massage-blck-head h3,
+.collapse-head .collapse-btn,
+.twos-head,
+details,
+.price-link,
+.float-choice,
+.article-container
+  transition: all .3s
+
+.main-content
+  height: 100%
+  margin-top: 400px
+  padding: 3em 1em 1em
+  text-align: center
+  background: #fff
+  z-index: 10
+  @media(min-width: 640px)
+    padding: 2em 1em 0
+  @media(min-width: 1024px)
+    margin-top: 500px
+    padding: 5em 4em 0
+
+// To top button
+#to-top
+  position: fixed
+  display: none
+  width: 2.5em
+  height: 2.5em
+  bottom: 1.25em
+  right: 1.25em
+  text-align: center
+  border-radius: 4px
+  background: rgba(55,188,191,.7)
+  z-index: 15
+  transition: all .3s
+  &:hover
+    background: rgba(55,188,191,1)
+  img
+    width: 60%
+    margin-top: .5em
+
+.to-top-shown
+  @media(min-width: 1024px)
+    display: none

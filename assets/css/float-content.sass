@@ -1,0 +1,97 @@
+.hero-float
+	background-image: url(../../imgs/float-sm.jpg)
+	@media(min-width: 640px)
+		background-image: url(../../imgs/float-md.jpg)
+	@media(min-width: 1024px)
+		background-image: url(../../imgs/float-lg.jpg)
+
+.float-container
+	h2
+		margin-bottom: 1em
+
+.article-container
+	position: relative
+	@media(min-width: 1024px)
+		margin-top: .4em
+
+.float-articles h3
+	display: none
+	@media(min-width: 1024px)
+		display: block
+		margin: .455em 0 .3em
+		padding-top: 1em
+
+.float-expect,
+.float-faq
+	top: 0
+	visibility: hidden
+	p
+		&:nth-child(2)
+			margin-top: 1em
+	@media(min-width: 1024px)
+		visibility: visible
+		opacity: 1
+
+.float-choice
+	margin-bottom: .5em
+	padding: 0.1em
+	background: #cce7e5
+	&:hover
+		background: #37bcbf
+	h3
+		margin: .6em 0
+
+.float-sect-choices
+	max-width: 350px
+	margin: 0 auto 1em
+	.active
+		background: #37bcbf
+	@media(min-width: 1024px)
+		display: none
+.float-articles
+	position: absolute
+	max-width: 638px
+	left: 0
+	right: 0
+	margin: 0 auto
+	transition: all .5s
+	@media(min-width: 1024px)
+		position: relative
+	ul
+		list-style: none
+		padding: 0
+		li
+			margin-bottom: .4em
+
+.float-info
+	position: relative
+	h3
+		@media(min-width: 1024px)
+			margin-top: 0
+			padding-top: 0
+	p
+		@media(min-width: 1024px)
+			&:nth-child(2)
+				margin-top: .455em
+
+.float-faq
+	h3
+		@media(min-width: 1024px)
+			margin-bottom: 0
+	p
+		margin-bottom: 1.4em
+		@media(min-width: 1024px)
+			margin-bottom: 1.25em
+
+.article-container
+	p.top-e,
+	p.top-q
+		margin-top: 0
+
+.float-container
+	.price-link
+		margin-bottom: 1em
+		@media(min-width: 640px)
+			margin: .25em 0 1.1em
+		@media(min-width: 1024px)
+			margin: .5em 0 1.1em

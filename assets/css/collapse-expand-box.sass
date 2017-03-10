@@ -1,0 +1,145 @@
+.collapse-container
+	margin-bottom: .5em
+	@media(min-width: 640px)
+		width: 100%
+	.collapse-head
+		position: relative
+		display: flex
+		align-items: center
+		padding: .448em .0em .448em .3em
+		cursor: pointer
+		background: #37bcbf
+		transition: 0.4s
+		@media(min-width: 1024px)
+			padding: 0 0 .5em
+			cursor: default
+			background: #fff
+		h3,
+		h4
+			margin: 0.448em 0
+			@media(min-width: 360px)
+				margin: .35em 0
+		h3
+			text-align: left
+			@media(min-width: 1024px)
+				margin: 1.75em auto 0
+				text-decoration: underline
+		.mass-h3-top
+			@media(min-width: 1024px)
+				margin-top: 0
+		h4
+			@media(min-width: 1024px)
+				padding-right: 32px
+		.collapse-btn
+			display: inline-block
+			width: 1.5em
+			margin-right: .5em
+			@media(min-width: 1024px)
+				display: none
+	.details
+		max-height: 0
+		background: #cce7e5
+		opacity: 0
+		overflow: hidden
+		transition: all .6s ease-in-out
+	.details-shown
+		@media(min-width: 1024px)
+			max-height: 500px
+			background: #fff
+			opacity: 1
+			overflow: visible
+		p
+			margin: 0
+			padding: 1em
+		.p-shown
+			@media(min-width: 1024px)
+				padding: 0
+	.details.show
+		max-height: 500px
+		opacity: 1
+
+.collapse-container .collapse-head .twos-head
+	@media(min-width: 640px)
+		margin: .567em 0
+	@media(min-width: 700px)
+		margin: .35em 0
+	@media(min-width: 1024px)
+		margin: 1.75em auto 0
+
+// ARROW ROTATE
+.collapse-head
+	.collapse-btn.btn-turn
+		transform: rotate(90deg)
+
+// MASSAGE PAGE
+.main-content-massages
+	.collapse-container
+		.collapse-head
+			h3
+				@media(min-width: 1024px)
+					margin: 1.25em auto 0
+
+.combo-collapse
+	display: flex
+	flex-direction: column
+	margin: 1em 0 1.5em
+	@media(min-width: 640px)
+		flex-direction: row
+	@media(min-width: 1024px)
+		flex-direction: column
+	.collapse-container
+		@media(min-width: 1024px)
+			width: 100%
+			margin-top: 1em
+		h4
+			margin: 0 auto
+			padding-right: 32px
+	.details.show
+		padding: .5em
+	.details
+		p
+			padding: 0 0 .4em
+			&:nth-child(2)
+				padding-bottom: 0
+		.details-bottom
+			padding-bottom: .5em
+	.details.show
+		@media(min-width: 1024px)
+			padding: .5em
+	.combo-holders
+		width: 100%
+		@media(min-width: 640px)
+			width: 50%
+			&:nth-of-type(2)
+				padding-left: 1em
+		@media(min-width: 1024px)
+			width: 100%
+			&:nth-of-type(2)
+				padding-left: 0
+		.collapse-head
+			padding: .7481em .3em
+			cursor: pointer
+			background: #37bcbf
+		.collapse-btn
+			display: inline-block
+
+// PRICING PAGE
+.collapse-container
+	.details.show
+		.price-massage
+			max-height: 600px
+
+.price-content
+	.collapse-container
+		.collapse-head
+			padding: .7481em .3em
+			cursor: pointer
+			background: #37bcbf
+			@media(min-width: 1024px)
+				padding-left: .6em
+		.collapse-btn
+			display: inline-block
+		.mass-h3-top
+			padding-right: 35px
+		.inbody-head
+			padding-right: 9px

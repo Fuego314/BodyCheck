@@ -1,0 +1,82 @@
+.services-head
+	margin: 0 0 1em
+	@media(min-width: 1024px)
+		margin-bottom: 1.25em
+
+.services
+	display: flex
+	flex-direction: column
+	@media(min-width: 640px)
+		flex-direction: row
+		flex-wrap: wrap
+	.service
+		@media(min-width: 640px)
+			position: relative
+			width: 33%
+			margin-bottom: 5em
+			padding-left: .9em
+			&:nth-child(3n+1)
+				padding-left: 0
+		@media(min-width: 1024px)
+			&:nth-child(4)
+				padding-left: 1.3em
+			&:nth-child(-n+4)
+				width: 25%
+			&:nth-child(n+5)
+				width: 50%
+				padding-left: 0
+	.home-icon
+		width: 120px
+		height: 120px
+		margin: 0 auto
+		background: url(../../imgs/home-icons.svg)
+		background-size: cover
+	.massage-icon
+		background-position: 0px
+	.float-icon
+		background-position: -132px
+	.relax-icon
+		background-position: -264px
+	.chiro-icon
+		background-position: -396px
+	.price-icon
+		background-position: -529px
+	.contact-icon
+		background-position: -661px
+	h3
+		margin: 1em 0 0.4em
+	p
+		margin: 0 0 1.25em
+		@media(min-width: 640px)
+			margin: 0 0 3em
+	.btn-container
+		margin-bottom: 2.5em
+		@media(min-width: 640px)
+			position: absolute
+			left: 14px
+			right: 0
+			bottom: 0
+			margin-bottom: 0
+		.learn-more
+			display: block
+			width: 250px
+			height: 40px
+			margin: 0 auto
+			padding: 0.725rem 1.25rem
+			text-align: center
+			background: #37bcbf
+			cursor: pointer
+			@media(min-width: 640px)
+				width: 175px
+				margin: 0 auto
+	.mass-btn,
+	.chiro-btn
+		@media(min-width: 640px)
+			left: 0
+	.chiro-btn
+		@media(min-width: 1024px)
+			left: 18px
+	.price-btn,
+	.contact-btn
+		@media(min-width: 1024px)
+			left: 0
